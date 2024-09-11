@@ -1,26 +1,24 @@
 <template>
-    <div>
-      <p>Celsius: <input v-model="celsius" type="number"></p>
-      <p>Fahrenheit: <input v-model="fahrenheit" type="number"></p>
-    </div>
-  </template>
+    <input v-model="reversedText" placeholder="Enter reversed text"/>
+    <p>Original text: {{ text }}</p>
+</template>
   
-  <script>
-  export default {
-    data() {
-      return {
-        celsius: 0,
-      };
+<script>
+export default {
+    data: ()=>{
+        return {
+            text:"asdf"
+        }
     },
     computed: {
-      fahrenheit: {
-        get() {
-          return (this.celsius * 9/5) + 32;
-        },
-        set(newValue) {
-          this.celsius = (newValue - 32) * 5/9;
-        },
-      },
-    },
-  };
-  </script>
+        reversedText:{
+            get() {
+                return this.text.split('').reverse().join('');
+            },
+            set(newValue){
+                this.text = newValue.split("").reverse().join("")
+            }
+        }
+    }
+};
+</script>

@@ -1,12 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <!-- <Exercise2/> -->
-  <Exercise11a/>
+  <Exercise16/>
 </template>
 
 <script>
-// import Exercise11 from './components/tasks/Exercise11.vue';
-import Exercise11a from './components/tasks/Exercise11a.vue';
+import Exercise16 from './components/tasks/Exercise16.vue';
+
+// import Exercise15 from './components/tasks/Exercise15.vue';
+
+// import Exercise13 from './components/tasks/Exercise13.vue';
+// import Exercise14 from './components/tasks/Exercise14.vue';
+
+// import Exercise11 from './components/tasks/Exercise11.vue';ž
+// import Exercise12 from './components/tasks/Exercise12.vue';
 
 // import Exercise10 from './components/tasks/Exercise10.vue';
 // import Exercise9 from './components/tasks/Exercise9.vue';
@@ -20,7 +27,7 @@ export default {
   name: 'App',
   components: {
     // Exercise2
-    Exercise11a
+    Exercise16
   }
 }
 </script>
